@@ -1,21 +1,21 @@
 class Aptitude < Formula
   desc "Test harness for validating AI agent behavior against steering guides"
   homepage "https://github.com/tatimblin/aptitude"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/tatimblin/aptitude/releases/download/v#{version}/aptitude-macos-arm64"
-      sha256 "8d4b627110ed007b4801bace9b19ae0d2e2f016d2ff529f9e3527d4b507e846e"
+      sha256 "b910aaeabbe6af3a3dfc0b6e7078e84c79937b5f4d083f30f052e594fd496145"
     else
       url "https://github.com/tatimblin/aptitude/releases/download/v#{version}/aptitude-macos-x86_64"
-      sha256 "59de940310462838917b039d479c087e8444924b9a03ec1dadfde5b7f3abfb4e"
+      sha256 "4928a560f50c226ee28a12a6086cd76707356911679b866714cdb5b79cdbeed5"
     end
   end
 
   on_linux do
     url "https://github.com/tatimblin/aptitude/releases/download/v#{version}/aptitude-linux-x86_64"
-    sha256 "588175846412306252787ad41f21fe8597c7fc05bdc7f8d162fd59ccad2f7e1e"
+    sha256 "be34baf385528858ba5e83e92cac73ce6db64e95c1839a63f4998b5bc6c33332"
   end
 
   def install
